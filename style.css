@@ -595,24 +595,6 @@ button { font-family:inherit; cursor:pointer; }
 }
 .contact-glow img:hover { transform:scale(1.03) rotate(1deg); }
 
-/* ============ FLOATING WA ============ */
-.float-wa {
-  position:fixed; bottom:22px; right:22px;
-  width:60px; height:60px; border-radius:50%;
-  background:linear-gradient(135deg,#25d366,#128c7e);
-  color:#fff; font-size:28px;
-  display:flex; align-items:center; justify-content:center;
-  box-shadow:0 0 30px rgba(37,211,102,0.7);
-  z-index:200;
-  animation:pulseWA 2s infinite;
-  transition:transform 0.35s;
-}
-.float-wa:hover { transform:scale(1.15) rotate(10deg); }
-@keyframes pulseWA {
-  0%,100% { box-shadow:0 0 0 0 rgba(37,211,102,0.7), 0 0 30px rgba(37,211,102,0.6); }
-  50%     { box-shadow:0 0 0 16px rgba(37,211,102,0), 0 0 40px rgba(37,211,102,0.8); }
-}
-
 /* ============ FOOTER ============ */
 .footer {
   padding:40px 0 30px;
@@ -733,7 +715,6 @@ button { font-family:inherit; cursor:pointer; }
   .terms-box { padding:22px 18px; }
   .terms-box p { font-size:13px; padding:9px 0; }
   .contact-lines p { font-size:15px; }
-  .float-wa { width:54px; height:54px; font-size:26px; bottom:16px; right:16px; }
   .logo-text { font-size:18px; letter-spacing:2px; }
   .logo-img, .logo-fallback { width:34px; height:34px; }
   .hamburger { width:40px; height:40px; }

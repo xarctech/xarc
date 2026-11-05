@@ -7,7 +7,6 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
       if (target) {
         e.preventDefault();
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        // close mobile nav if open
         mobileNav.classList.remove('open');
         hamburger.classList.remove('active');
       }
@@ -36,7 +35,6 @@ hamburger.addEventListener('click', () => {
   mobileNav.classList.toggle('open');
 });
 
-// Close nav when clicking outside
 document.addEventListener('click', (e) => {
   if (!mobileNav.contains(e.target) && !hamburger.contains(e.target)) {
     mobileNav.classList.remove('open');
@@ -44,7 +42,6 @@ document.addEventListener('click', (e) => {
   }
 });
 
-// Close nav on resize (when going to desktop)
 window.addEventListener('resize', () => {
   if (window.innerWidth > 992) {
     mobileNav.classList.remove('open');

@@ -154,3 +154,65 @@ console.log(
   'background:linear-gradient(90deg,#ffd700,#ff8c00);color:#000;font-size:20px;font-weight:900;padding:10px 20px;border-radius:8px;'
 );
 console.log('%c📞 Call: 9309332775 | 📧 xarctech@gmail.com', 'color:#ffd700;font-size:13px;');
+// ============ DEMO MODAL LOGIC ============
+// Open Demo Function
+function openDemo(key) {
+  const html = DEMO_DATA[key];
+  if (!html) {
+    console.error('Demo not found for:', key);
+    return;
+  }
+  
+  const modal = document.getElementById('demoModal');
+  const iframe = document.getElementById('demoIframe');
+  const title = document.getElementById('demoTitle');
+
+  // Title mapping for demo headers
+  const titles = {
+    advocate: '⚖ Sharma & Associates — Advocate',
+    doctor: '👨‍⚕️ Dr. Patel Clinic — Doctor',
+    crypto1: '◆ Neon Coin — Token Landing',
+    crypto2: '📈 GoldBond — Bonding Curve DApp',
+    crypto3: '🔄 SwapX — Exchange UI',
+    general1: '🛒 Fresh Mart — Grocery Store',
+    general2: '🏪 Sharma Kirana — Kirana Store',
+    medical: '💊 MediCare — Pharmacy',
+    astro1: '🔮 Pandit Ji — Kundli Astrology',
+    astro2: '🎴 Mystic Tarot — Tarot Reading',
+    astro3: '🏛️ Vastu Expert',
+    computer1: '💻 Cyber Zone — Cyber Cafe',
+    computer2: '🎓 TechLearn — Computer Training',
+    wood1: '🪵 Woodcraft — Furniture Store',
+    wood2: '🏛️ Wood Interior Studio',
+    wood3: '⚒️ Master Wood Works',
+    hotel1: '👑 The Grand Palace — Luxury Hotel',
+    hotel2: '🍽️ Spice Garden — Restaurant',
+    hotel3: '☕ Cozy Brew — Cafe',
+    hotel4: '🍷 Elite Dining',
+    institute1: '🎓 Success Coaching',
+    institute2: '🏫 Bright Future School'
+  };
+
+  if(title) title.textContent = titles[key] || 'Demo Preview';
+  if(iframe) iframe.srcdoc = html;
+  
+  if(modal) {
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden'; // Prevent background scroll
+  }
+}
+
+// Close Demo Function
+function closeDemo() {
+  const modal = document.getElementById('demoModal');
+  const iframe = document.getElementById('demoIframe');
+  
+  if(modal) modal.classList.remove('active');
+  if(iframe) iframe.srcdoc = ''; // Clear iframe content
+  document.body.style.overflow = ''; // Restore scroll
+}
+
+// Close modal on Escape key press
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeDemo();
+});

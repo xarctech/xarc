@@ -51,7 +51,7 @@ window.addEventListener('resize', () => {
 
 // ============ REVEAL ON SCROLL ============
 const revealItems = document.querySelectorAll(
-  '.card, .price-card, .loc-card, .hero-img, .wide-img, .crypto-img, .terms-box, .seo-box, .contact-glow img'
+  '.card, .price-card, .loc-card, .hero-img, .wide-img, .crypto-img, .terms-box, .seo-box, .contact-glow img, .demo-card'
 );
 revealItems.forEach(el => {
   el.style.opacity = '0';
@@ -67,8 +67,43 @@ const io = new IntersectionObserver((entries) => {
       io.unobserve(entry.target);
     }
   });
-}, { threshold: 0.15 });
+}, { threshold: 0.1 });
 revealItems.forEach(el => io.observe(el));
+
+// ============ DEMO FILTER ============
+const filterBtns = document.querySelectorAll('.filter-btn');
+const demoCards = document.querySelectorAll('.demo-card');
+
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const filter = btn.dataset.filter;
+
+    demoCards.forEach(card => {
+      const cat = card.dataset.cat;
+      if (filter === 'all' || cat === filter) {
+        card.classList.remove('hidden');
+        card.style.animation = 'none';
+        void card.offsetWidth;
+        card.style.animation = 'demoFadeIn 0.5s ease forwards';
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+  });
+});
+
+// Demo fade in animation
+const demoStyle = document.createElement('style');
+demoStyle.textContent = `
+  @keyframes demoFadeIn {
+    from { opacity:0; transform:translateY(20px) scale(0.95); }
+    to   { opacity:1; transform:translateY(0) scale(1); }
+  }
+`;
+document.head.appendChild(demoStyle);
 
 // ============ CURSOR GLOW (only desktop) ============
 if (window.matchMedia('(min-width: 993px)').matches) {

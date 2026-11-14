@@ -33,6 +33,7 @@
       </a>
       <nav class="nav">
         <a href="#services">Services</a>
+        <a href="#demos">Demos</a>
         <a href="#pricing">Pricing</a>
         <a href="#crypto">Crypto</a>
         <a href="#locations">Locations</a>
@@ -51,6 +52,7 @@
   <!-- MOBILE NAV -->
   <nav class="mobile-nav">
     <a href="#services">Services</a>
+    <a href="#demos">Demos</a>
     <a href="#pricing">Pricing</a>
     <a href="#crypto">Crypto</a>
     <a href="#locations">Locations</a>
@@ -144,6 +146,358 @@
       </div>
     </div>
   </section>
+
+  <!-- ==================== DEMO PORTFOLIO ==================== -->
+  <section class="section demos-section" id="demos">
+    <div class="container">
+      <h2 class="section-title">Our <span class="rainbow-text">Demo Work</span></h2>
+      <p class="section-sub">Real websites we've designed — browse by category. Yeh hai hamara kaam, aapka next project yahi se shuru hota hai.</p>
+
+      <!-- Filter Tabs -->
+      <div class="demo-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="profile">Profiles</button>
+        <button class="filter-btn" data-filter="crypto">Crypto</button>
+        <button class="filter-btn" data-filter="general">General Store</button>
+        <button class="filter-btn" data-filter="medical">Medical</button>
+        <button class="filter-btn" data-filter="astrology">Astrology</button>
+        <button class="filter-btn" data-filter="computer">Computer / Cyber</button>
+        <button class="filter-btn" data-filter="wood">Carpenter / Wood</button>
+        <button class="filter-btn" data-filter="hotel">Hotel / Restaurant</button>
+        <button class="filter-btn" data-filter="institute">Institute</button>
+      </div>
+
+      <!-- Demo Grid -->
+      <div class="demo-grid" id="demoGrid">
+
+        <!-- PROFILE DEMOS (2) -->
+        <div class="demo-card" data-cat="profile">
+          <div class="demo-thumb">
+            <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=80" alt="Advocate Website Demo" loading="lazy" />
+            <div class="demo-overlay">
+              <button onclick="openDemo('advocate')" class="demo-btn">👁 View Demo</button>
+            </div>
+          </div>
+          <div class="demo-info">
+            <span class="demo-cat">Personal Profile</span>
+            <h4>Advocate Professional Site</h4>
+            <p>Elegant law firm profile with case details, consultation form & WhatsApp.</p>
+          </div>
+        </div>
+
+        <div class="demo-card" data-cat="profile">
+          <div class="demo-thumb">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=800&q=80" alt="Doctor Website Demo" loading="lazy" />
+            <div class="demo-overlay">
+              <button onclick="openDemo('doctor')" class="demo-btn">👁 View Demo</button>
+            </div>
+          </div>
+          <div class="demo-info">
+            <span class="demo-cat">Personal Profile</span>
+            <h4>Doctor Professional Site</h4>
+            <p>Modern clinic profile with appointment booking & service list.</p>
+          </div>
+        </div>
+
+        <!-- CRYPTO DEMOS (3) -->
+        <div class="demo-card" data-cat="crypto">
+          <div class="demo-thumb">
+            <img src="https://images.unsplash.com/photo-1621761191319-c6fb62004040?auto=format&fit=crop&w=800&q=80" alt="Crypto Token Demo 1" loading="lazy" />
+            <div class="demo-overlay">
+              <button onclick="openDemo('crypto1')" class="demo-btn">👁 View Demo</button>
+            </div>
+          </div>
+          <div class="demo-info">
+            <span class="demo-cat">Crypto</span>
+            <h4>Simple Token Landing</h4>
+            <p>Token launch page with roadmap, whitepaper & buy button.</p>
+          </div>
+        </div>
+
+        <div class="demo-card" data-cat="crypto">
+          <div class="demo-thumb">
+            <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80" alt="Crypto Token Demo 2" loading="lazy" />
+            <div class="demo-overlay">
+              <button onclick="openDemo('crypto2')" class="demo-btn">👁 View Demo</button>
+            </div>
+          </div>
+          <div class="demo-info">
+            <span class="demo-cat">Crypto</span>
+            <h4>Bonding Curve DApp</h4>
+            <p>Bonding curve token with rewards, levels & live chart.</p>
+          </div>
+        </div>
+
+        <div class="demo-card" data-cat="crypto">
+          <div class="demo-thumb">
+            <img src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?auto=format&fit=crop&w=800&q=80" alt="Crypto Token Demo 3" loading="lazy" />
+            <div class="demo-overlay">
+              <button onclick="openDemo('crypto3')" class="demo-btn">👁 View Demo</button>
+            </div>
+          </div>
+          <div class="demo-info">
+            <span class="demo-cat">Crypto</span>
+            <h4>Crypto Exchange UI</h4>
+            <p>Full DApp with buy/sell, wallet connect & reward tracker.</p>
+          </div>
+        </div>
+
+        <!-- GENERAL STORE DEMOS (2) -->
+        <div class="demo-card" data-cat="general">
+          <div class="demo-thumb">
+            <img src="https://images.unsplash.com/photo-1604719312566-8912e9227c6a?auto=format&fit=crop&w=800&q=80" alt="General Store Demo 1" loading="lazy" />
+            <div class="demo-overlay">
+              <button onclick="openDemo('general1')" class="demo-btn">👁 View Demo</button>
+            </div>
+          </div>
+          <div class="demo-info">
+            <span class="demo-cat">General Store</span>
+            <h4>Grocery Store Site</h4>
+            <p>Product catalog, offers & WhatsApp order option.</p>
+          </div>
+        </div>
+
+        <div class="demo-card" data-cat="general">
+          <div class="demo-thumb">
+            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80" alt="General Store Demo 2" loading="lazy" />
+            <div class="demo-overlay">
+              <button onclick="openDemo('general2')" class="demo-btn">👁 View Demo</button>
+            </div>
+          </div>
+          <div class="demo-info">
+            <span class="demo-cat">General Store</span>
+            <h4>Kirana Shop Site</h4>
+            <p>Simple store page with daily offers & Google Maps.</p>
+          </div>
+        </div>
+
+        <!-- MEDICAL STORE (1) -->
+        <div class="demo-card" data-cat="medical">
+          <div class="demo-thumb">
+            <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=800&q=80" alt="Medical Store Demo" loading="lazy" />
+            <div class="demo-overlay">
+              <button onclick="openDemo('medical')" class="demo-btn">👁 View Demo</button>
+            </div>
+          </div>
+          <div class="demo-info">
+            <span class="demo-cat">Medical Store</span>
+            <h4>Pharmacy Store Site</h4>
+            <p>Medicine catalog, delivery info & call-to-order button.</p>
+          </div>
+        </div>
+
+        <!-- ASTROLOGY DEMOS (3) -->
+        <div class="demo-card" data-cat="astrology">
+          <div class="demo-thumb">
+            <img src="https://images.unsplash.com/photo-1532968961962-8a0cb3a2d4f5?auto=format&fit=crop&w=800&q=80" alt="Astrology Demo 1" loading="lazy" />
+            <div class="demo-overlay">
+              <button onclick="openDemo('astro1')" class="demo-btn">👁 View Demo</button>
+            </div>
+          </div>
+          <div class="demo-info">
+            <span class="demo-cat">Astrology</span>
+            <h4>Kundli & Horoscope Site</h4>
+            <p>Astrologer profile with consultation & remedies.</p>
+          </div>
+        </div>
+
+        <div class="demo-card" data-cat="astrology">
+          <div class="demo-thumb">
+            <img src="https://images.unsplash.com/photo-1502581827181-9cf3c3ee0106?auto=format&fit=crop&w=800&q=80" alt="Astrology Demo 2" loading="lazy" />
+            <div class="demo-overlay">
+              <button onclick="openDemo('astro2')" class="demo-btn">👁 View Demo</button>
+            </div>
+          </div>
+          <div class="demo-info">
+            <span class="demo-cat">Astrology</span>
+            <h4>Tarot Card Reader</h4>
+            <p>Beautiful tarot reading site with booking form.</p>
+          </div>
+        </div>
+
+        <div class="demo-card" data-cat="astrology">
+          <div class="demo-thumb">
+            <img src="https://images.unsplash.com/photo-1515894347710-19fdcbb1e2a5?auto=format&fit=crop&w=800&q=80" alt="Astrology Demo 3" loading="lazy" />
+            <div class="demo-overlay">
+              <button onclick="openDemo('astro3')" class="demo-btn">👁 View Demo</button>
+            </div>
+          </div>
+          <div class="demo-info">
+            <span class="demo-cat">Astrology</span>
+            <h4>Vastu Consultant Site</h4>
+            <p>Vastu tips, services & online booking.</p>
+          </div>
+        </div>
+
+        <!-- COMPUTER / CYBER CAFE DEMOS (2) -->
+        <div class="demo-card" data-cat="computer">
+          <div class="demo-thumb">
+            <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80" alt="Computer Center Demo 1" loading="lazy" />
+            <div class="demo-overlay">
+              <button onclick="openDemo('computer1')" class="demo-btn">👁 View Demo</button>
+            </div>
+          </div>
+          <div class="demo-info">
+            <span class="demo-cat">Computer / Cyber</span>
+            <h4>Cyber Cafe Site</h4>
+            <p>Services list, printing, online form filling & rates.</p>
+          </div>
+        </div>
+
+        <div class="demo-card" data-cat="computer">
+          <div class="demo-thumb">
+            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80" alt="Computer Center Demo 2" loading="lazy" />
+            <div class="demo-overlay">
+              <button onclick="openDemo('computer2')" class="demo-btn">👁 View Demo</button>
+            </div>
+          </div>
+          <div class="demo-info">
+            <span class="demo-cat">Computer / Cyber</span>
+            <h4>Computer Training Center</h4>
+            <p>Course list, fees & admission form.</p>
+          </div>
+        </div>
+
+        <!-- WOOD / CARPENTER DEMOS (3) -->
+        <div class="demo-card" data-cat="wood">
+          <div class="demo-thumb">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="Carpenter Demo 1" loading="lazy" />
+            <div class="demo-overlay">
+              <button onclick="openDemo('wood1')" class="demo-btn">👁 View Demo</button>
+            </div>
+          </div>
+          <div class="demo-info">
+            <span class="demo-cat">Carpenter / Wood</span>
+            <h4>Furniture Store</h4>
+            <p>Wooden furniture gallery with inquiry form.</p>
+          </div>
+        </div>
+
+        <div class="demo-card" data-cat="wood">
+          <div class="demo-thumb">
+            <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80" alt="Carpenter Demo 2" loading="lazy" />
+            <div class="demo-overlay">
+              <button onclick="openDemo('wood2')" class="demo-btn">👁 View Demo</button>
+            </div>
+          </div>
+          <div class="demo-info">
+            <span class="demo-cat">Carpenter / Wood</span>
+            <h4>Interior Wood Design</h4>
+            <p>Modern interior wood design portfolio site.</p>
+          </div>
+        </div>
+
+        <div class="demo-card" data-cat="wood">
+          <div class="demo-thumb">
+            <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=800&q=80" alt="Carpenter Demo 3" loading="lazy" />
+            <div class="demo-overlay">
+              <button onclick="openDemo('wood3')" class="demo-btn">👁 View Demo</button>
+            </div>
+          </div>
+          <div class="demo-info">
+            <span class="demo-cat">Carpenter / Wood</span>
+            <h4>Custom Furniture Workshop</h4>
+            <p>Custom-made furniture showcase & quote form.</p>
+          </div>
+        </div>
+
+        <!-- HOTEL / RESTAURANT DEMOS (4) -->
+        <div class="demo-card" data-cat="hotel">
+          <div class="demo-thumb">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Hotel Demo 1" loading="lazy" />
+            <div class="demo-overlay">
+              <button onclick="openDemo('hotel1')" class="demo-btn">👁 View Demo</button>
+            </div>
+          </div>
+          <div class="demo-info">
+            <span class="demo-cat">Hotel / Restaurant</span>
+            <h4>Luxury Hotel Site</h4>
+            <p>Room booking, gallery & amenities page.</p>
+          </div>
+        </div>
+
+        <div class="demo-card" data-cat="hotel">
+          <div class="demo-thumb">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Hotel Demo 2" loading="lazy" />
+            <div class="demo-overlay">
+              <button onclick="openDemo('hotel2')" class="demo-btn">👁 View Demo</button>
+            </div>
+          </div>
+          <div class="demo-info">
+            <span class="demo-cat">Hotel / Restaurant</span>
+            <h4>Restaurant Menu Site</h4>
+            <p>Digital menu with food photos & table booking.</p>
+          </div>
+        </div>
+
+        <div class="demo-card" data-cat="hotel">
+          <div class="demo-thumb">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80" alt="Hotel Demo 3" loading="lazy" />
+            <div class="demo-overlay">
+              <button onclick="openDemo('hotel3')" class="demo-btn">👁 View Demo</button>
+            </div>
+          </div>
+          <div class="demo-info">
+            <span class="demo-cat">Hotel / Restaurant</span>
+            <h4>Cafe & Coffee Shop</h4>
+            <p>Cozy cafe site with menu & online ordering.</p>
+          </div>
+        </div>
+
+        <div class="demo-card" data-cat="hotel">
+          <div class="demo-thumb">
+            <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=800&q=80" alt="Hotel Demo 4" loading="lazy" />
+            <div class="demo-overlay">
+              <button onclick="openDemo('hotel4')" class="demo-btn">👁 View Demo</button>
+            </div>
+          </div>
+          <div class="demo-info">
+            <span class="demo-cat">Hotel / Restaurant</span>
+            <h4>Fine Dine Restaurant</h4>
+            <p>Premium restaurant site with reservations.</p>
+          </div>
+        </div>
+
+        <!-- INSTITUTE DEMOS (2) -->
+        <div class="demo-card" data-cat="institute">
+          <div class="demo-thumb">
+            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80" alt="Institute Demo 1" loading="lazy" />
+            <div class="demo-overlay">
+              <button onclick="openDemo('institute1')" class="demo-btn">👁 View Demo</button>
+            </div>
+          </div>
+          <div class="demo-info">
+            <span class="demo-cat">Institute</span>
+            <h4>Coaching Institute Site</h4>
+            <p>Courses, faculty & admission form.</p>
+          </div>
+        </div>
+
+        <div class="demo-card" data-cat="institute">
+          <div class="demo-thumb">
+            <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=800&q=80" alt="Institute Demo 2" loading="lazy" />
+            <div class="demo-overlay">
+              <button onclick="openDemo('institute2')" class="demo-btn">👁 View Demo</button>
+            </div>
+          </div>
+          <div class="demo-info">
+            <span class="demo-cat">Institute</span>
+            <h4>School / College Site</h4>
+            <p>School website with gallery & contact form.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CTA after demos -->
+      <div class="demo-cta">
+        <h3>Apne business ke liye aisa hi website chahiye?</h3>
+        <p>Bas 3 din mein ready — WhatsApp karo aur shuru karte hain!</p>
+        <a href="https://wa.me/919309332775?text=Hi%20XARC%2C%20I%20saw%20your%20demos%20and%20want%20a%20website" target="_blank" class="btn btn-primary">💬 Book Your Website Now</a>
+      </div>
+    </div>
+  </section>
+  <!-- ==================== END DEMO PORTFOLIO ==================== -->
 
   <!-- CRYPTO -->
   <section class="section crypto-section" id="crypto">
@@ -342,6 +696,16 @@
     </div>
   </footer>
 
+  <!-- ==================== DEMO MODAL ==================== -->
+  <div class="demo-modal" id="demoModal">
+    <div class="demo-modal-header">
+      <h3 id="demoTitle">Demo Preview</h3>
+      <button class="demo-modal-close" onclick="closeDemo()">✕</button>
+    </div>
+    <iframe id="demoIframe" class="demo-iframe" title="Demo Preview"></iframe>
+  </div>
+
+  <script src="demos.js"></script>
   <script src="script.js"></script>
 </body>
-  </html>
+</html>

@@ -1362,7 +1362,7 @@ const DEMO_DATA = {
       <div class="footer-bottom">© 2026 SWAPX. All rights reserved. | Built by XARC</div>
     </footer>
     </body></html>
-  `
+  `,
   // ========== GENERAL STORE 1: GROCERY ==========
   "general1": `
     <!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
